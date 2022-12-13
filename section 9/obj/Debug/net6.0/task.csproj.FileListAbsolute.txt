@@ -1,0 +1,30 @@
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.csproj.AssemblyReference.cache
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.GeneratedMSBuildEditorConfig.editorconfig
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.AssemblyInfoInputs.cache
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.AssemblyInfo.cs
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.csproj.CoreCompileInputs.cache
+E:\3rd year- 1st semister\Open source\Sections\section 4\bin\Debug\net6.0\task.exe
+E:\3rd year- 1st semister\Open source\Sections\section 4\bin\Debug\net6.0\task.deps.json
+E:\3rd year- 1st semister\Open source\Sections\section 4\bin\Debug\net6.0\task.runtimeconfig.json
+E:\3rd year- 1st semister\Open source\Sections\section 4\bin\Debug\net6.0\task.dll
+E:\3rd year- 1st semister\Open source\Sections\section 4\bin\Debug\net6.0\task.pdb
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.dll
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\refint\task.dll
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.pdb
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\task.genruntimeconfig.cache
+E:\3rd year- 1st semister\Open source\Sections\section 4\obj\Debug\net6.0\ref\task.dll
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\bin\Debug\net6.0\task.exe
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\bin\Debug\net6.0\task.deps.json
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\bin\Debug\net6.0\task.runtimeconfig.json
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\bin\Debug\net6.0\task.dll
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\bin\Debug\net6.0\task.pdb
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.csproj.AssemblyReference.cache
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.GeneratedMSBuildEditorConfig.editorconfig
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.AssemblyInfoInputs.cache
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.AssemblyInfo.cs
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.csproj.CoreCompileInputs.cache
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.dll
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\refint\task.dll
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.pdb
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\task.genruntimeconfig.cache
+E:\3rd year- 1st semister\Open Source Software\Sections\section 9\obj\Debug\net6.0\ref\task.dll
