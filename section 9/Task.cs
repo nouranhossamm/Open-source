@@ -1,30 +1,82 @@
-using System; //Directive: include sdk related types
-namespace Task;  //creating new namespace called 'Task'
+using System; 
+
+namespace Task;  
+
+public abstract class Person{
+    public string Name;
+    public int Age;
+
+    public Person(string name , int age){
+      Name = name;
+      Age = age;
+    }
+    public abstract void Print();
+
+}
+
+public class Student : Person {
+public int Year;
+public float Gpa;
+
+  public Student(string name , int age,  int year, float gpa) : base(name , age){
+    Year = year;
+    Gpa = gpa;
+  }
+
+  public override void Print(){
+    Console.WriteLine($"My name is{Name}, my age is {Age}, and gpa is {Gpa}");
+  }
+}
+
+
+public class Database{
+  
+  int _currentIndex;
+
+  public Person[] People = new Person[50];
+
+  public void AddStudent(Student student){
+    // if( _currentIndex == 49) return;
+    People[_currentIndex++] = student;
+  } 
+}
+
+public class Staff : Person {
+  public double Salary;
+  public int JoinYear;
+
+  public Staff(string name , int age, double salary, int joinYear) : base(name , age){
+    Salary = salary;
+    JoinYear = joinYear;
+  }
+
+public override void Print(){
+    Console.WriteLine($"My name is{Name}, my age is {Age}, and my salary is {Salary}");
+  }
+
+}
+
+
 
 public class Task
 {
   private static void Main()
   {
-    
-    Console.Write("please enter your name: ");
-   /* var name = Console.ReadLine();
-    Console.WriteLine("Hello" + name);  //public  static method within the public static class 'console'
-    Console.WriteLine("Hello, World") ; //public  static method within the public static class 'console'
+    // Console.Write("Hello, World");
+      var database = new Database();
+      
+      Console.Write("Name: ");
+      var name = Console.ReadLine();
+      Console.Write("Age: ");
+      var age = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Year: ");
+      var year = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Gpa: ");
+      var gpa = Convert.ToSingle(Console.ReadLine());
+      
+      var student = new Student(name, age, year, gpa);
 
-    byte i0 = 100 ;// 0 ,  255
-    sbyte i1 = 100; //-128,  127
-    short i2 = 30_000; // -32_000 , 32_000 
-    int i3 = -2_000_000_000; // 
-
-
-
-    char c = 'a';
-    bool b = true;
-
-
-
-    int number = Convert.ToInt32(Console.ReadLine());
-    Console.Write(number * number);
-    */
+      database.AddStudent(student);
+  
   }  
 };
