@@ -10,7 +10,7 @@ public class Person{
       Name = name;
       Age = age;
     }
-    public void Print(){
+    public virtual void Print(){
       Console.WriteLine($"My name is {Name}, my age is {Age}");
     }
 
@@ -25,7 +25,7 @@ public float Gpa;
     Gpa = gpa;
   }
 
-  public void Print(){
+  public override void Print(){
     Console.WriteLine($"My name is {Name}, my age is {Age}, and gpa is {Gpa}");
   }
 }
@@ -66,7 +66,7 @@ public class Staff : Person {
     JoinYear = joinYear;
   }
 
-public void Print(){
+public override void Print(){
     Console.WriteLine($"My name is {Name}, my age is {Age}, and my salary is {Salary}");
   }
 
