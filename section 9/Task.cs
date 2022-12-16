@@ -7,13 +7,23 @@ public class Person{
     public int Age;
 
     public Person(string name , int age){
+
+      if(name == null || name == "" || name.Length >=32)
+      {
+        throw new Exception("Invalid Name");
+      }
+
+      if(age <= 0 || age > 128)
+      {
+        throw new Exception("Invalid Age");
+      }
+
       Name = name;
       Age = age;
     }
     public virtual void Print(){
       Console.WriteLine($"My name is {Name}, my age is {Age}");
     }
-
 }
 
 public class Student : Person {
@@ -21,6 +31,17 @@ public int Year;
 public float Gpa;
 
   public Student(string name , int age,  int year, float gpa) : base(name , age){
+
+    if(year >= 1 && year <= 5)
+    {
+      throw new Exception("Invalid Year");
+    }
+
+    if(gpa >= 0 && gpa <= 4)
+    {
+      throw new Exception("Invalid Gpa");
+    }
+
     Year = year;
     Gpa = gpa;
   }
@@ -62,6 +83,18 @@ public class Staff : Person {
   public int JoinYear;
 
   public Staff(string name , int age, double salary, int joinYear) : base(name , age){
+
+       if(salary > 0 && salary < 120_000)
+    {
+      throw new Exception("Invalid Salary");
+    }
+
+    if(joinYear > 21)
+    {
+      throw new Exception("Invalid JoinYear");
+    }
+
+
     Salary = salary;
     JoinYear = joinYear;
   }
@@ -71,7 +104,6 @@ public override void Print(){
   }
 
 }
-
 
 public class Task
 {
@@ -97,8 +129,14 @@ public class Task
             Console.Write("Gpa: ");
             var gpa = Convert.ToSingle(Console.ReadLine());
             
-            var student = new Student(name, age, year, gpa);
-            database.AddStudent(student);
+            try{
+              var student = new Student(name, age, year, gpa);
+              database.AddStudent(student);
+            }
+            catch(Exception e)
+            {
+              Console.WriteLine(e.Message);
+            }
             break;
           case 2:
             // staff
@@ -111,8 +149,14 @@ public class Task
             Console.Write("JoinYear: ");
             var joinYear = Convert.ToInt32(Console.ReadLine());
 
-            var staff = new Staff(name1, age1, salary, joinYear);
-            database.AddStaff(staff);
+            try{
+              var staff = new Staff(name1, age1, salary, joinYear);
+              database.AddStaff(staff);
+            }
+            catch(Exception e)
+            {
+              Console.WriteLine(e.Message);
+            }
             break;
           case 3:
             Console.Write("Name: ");
@@ -120,8 +164,14 @@ public class Task
             Console.Write("Age: ");
             var age2 = Convert.ToInt32(Console.ReadLine());
 
-            var person = new Person(name2, age2);
-            database.AddPerson(person);
+            try{
+              var person = new Person(name2, age2);
+              database.AddPerson(person);
+            }
+            catch(Exception e)
+            {
+              Console.WriteLine(e.Message);
+            }
             break;
           case 4:
             database.PrintAll();
@@ -129,7 +179,6 @@ public class Task
           default:
             return;
         }
-      }
-  
+      } 
   }  
 };
